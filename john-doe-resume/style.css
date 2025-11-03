@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+header {
+    text-align: center; 
+    color: #016B61;
+    background-color: #E5E9C5;
+}
+h2 {
+    text-align: center;
+    background-color: #E5E9C5;
+    color: #014D40;
+    border-radius: 12px; /*corners of the border rounded.*/;
+}
+section.profile {      /*choose Section that class name is profile*/
+    background-color: #9ECFD4;
+    border: 2px solid #016B61; /*Sets a border,thickness,style*/
+    border-radius: 12px; /*corners of the border rounded.*/
+    padding: 5px; /*outer space around the element*/
+    margin: 10px 0; /*ระยะห่างภายนอก Top and Bottom,Left and Right*/
+    text-align: center;
+}
+#experience ul  {  /*choose ID experience and ul*/
+    width: fit-content; /* ทำให้ความกว้างครอบคลุมแค่เนื้อหาภายใน */
+    margin: auto; /*center the ul*/
+}

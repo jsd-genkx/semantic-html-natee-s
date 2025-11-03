@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign in</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 align="center">Sign In</h1>   <!--Form Name-->
+<body style="background-color:lightcyan;">
     <form action="/login" method="POST" align="center" >  <!--ใช้กำหนด “ฟอร์ม” เพื่อส่งข้อมูลไปยังเซิร์ฟเวอร์-->
-        <div>
-            <label for="email">E-mail:</label>   <!--ป้ายคำอธิบายที่บอกว่าช่องกรอกนี้เอาไว้กรอกอะไร,for is attr ที่บอกว่าlabelเชื่อมต่อกับ-->
-            <input type="email" id="email" name="email" placeholder="please fill your Email" required> <!--typeบอกระบบว่ารูปแบบช่องนี้ต้องเป็นemail, -->
-        </div>
-        <div>
-            <label for="Password">password:</label>         
-            <input type="password" id="password" name="Password" placeholder="8 and 20 characters" minlength="8" 
+        <header>
+            <h1 align="center">Sign In</h1>   <!--Form Name-->
+        </header>
+        <main>
+            <section id="email"  class="data">
+                <label for="email">E-mail:</label>   <!--ป้ายคำอธิบายที่บอกว่าช่องกรอกนี้เอาไว้กรอกอะไร,for is attr ที่บอกว่าlabelเชื่อมต่อกับ-->
+                <input type="email" id="email" name="email" placeholder="please fill your Email" required> <!--typeบอกระบบว่ารูปแบบช่องนี้ต้องเป็นemail, -->
+            </section>
+            <section id="password"  class="data">
+                <label for="Password">password:</label>         
+                <input type="password" id="password" name="Password" placeholder="8 and 20 characters" minlength="8" 
                    maxlength="20" required> 
-        </div>
-        <div>
-            <button type="submit">Sign in</button> <!-- value = ข้อความที่แสดงบนปุ่ม -->
-        </div>
-        <p>
-            <a href="signup.html">Sign Up</a>
-        </p>
-        <p>
-            <a href="forget-password.html">Forgot Password </a> 
-        </p>
+            </section>
+            <section id="submit" class="button">
+                <button type="submit">Sign in</button> <!-- value = ข้อความที่แสดงบนปุ่ม -->
+            </section>
+            <div>
+                <span>
+                    <a href="signup.html">Sign Up</a>
+                </span>
+                <br>
+                <span>
+                    <a href="forget-password.html">Forgot Password </a> 
+                </span>
+            </div>
+        </main>
     </form>
 </body>
 </html>
